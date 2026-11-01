@@ -1,0 +1,4 @@
+litellm[proxy]==1.105.1
+fastapi
+uvicorn
+httpx

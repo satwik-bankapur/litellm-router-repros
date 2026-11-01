@@ -1,0 +1,22 @@
+{
+  "litellm_version": "1.105.1",
+  "cases": [
+    {
+      "case": "default",
+      "settings": "none (LiteLLM defaults)",
+      "outcome": "200 OK",
+      "served_by": "backup",
+      "attempted_fallbacks": 1,
+      "primary_calls": 0,
+      "backup_calls": 1
+    },
+    {
+      "case": "fallback_on_unsupported_params=False",
+      "settings": {
+        "fallback_on_unsupported_params": false
+      },
+      "outcome": "setting not accepted by this version",
+      "detail": "Router.__init__() got an unexpected keyword argument 'fallback_on_unsupported_params'"
+    }
+  ]
+}

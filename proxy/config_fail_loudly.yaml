@@ -1,0 +1,18 @@
+# Same as config.yaml, plus the opt-out from BerriAI/litellm#46350 (needs 1.107.0.dev3 or newer).
+model_list:
+  - model_name: primary
+    litellm_params:
+      model: openai/gpt-5-unmapped
+      api_base: http://127.0.0.1:9101/v1
+      api_key: sk-fake
+      reasoning_effort: xhigh   # rejected before sending: UnsupportedParamsError
+  - model_name: backup
+    litellm_params:
+      model: openai/fake-model
+      api_base: http://127.0.0.1:9102/v1
+      api_key: sk-fake
+
+router_settings:
+  num_retries: 0
+  fallbacks: [{"primary": ["backup"]}]
+  fallback_on_unsupported_params: false

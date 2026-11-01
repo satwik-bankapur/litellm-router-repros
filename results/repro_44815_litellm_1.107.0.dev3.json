@@ -1,0 +1,24 @@
+{
+  "litellm_version": "1.107.0.dev3",
+  "cases": [
+    {
+      "case": "default",
+      "settings": "none (LiteLLM defaults)",
+      "outcome": "200 OK",
+      "served_by": "backup",
+      "attempted_fallbacks": 1,
+      "primary_calls": 0,
+      "backup_calls": 1
+    },
+    {
+      "case": "fallback_on_unsupported_params=False",
+      "settings": {
+        "fallback_on_unsupported_params": false
+      },
+      "outcome": "raised UnsupportedParamsError",
+      "detail": "litellm.UnsupportedParamsError: reasoning_effort=xhigh is not supported for this model.",
+      "primary_calls": 0,
+      "backup_calls": 0
+    }
+  ]
+}

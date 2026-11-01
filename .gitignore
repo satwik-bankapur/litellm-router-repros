@@ -1,0 +1,5 @@
+.venv/
+.venv-dev/
+__pycache__/
+results/*.log
+results/*_body.json

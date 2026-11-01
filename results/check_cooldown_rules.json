@@ -1,0 +1,61 @@
+{
+  "litellm_version": "1.105.1",
+  "results": [
+    {
+      "check": "429_single",
+      "requests": 6,
+      "attempts_on_A": 6,
+      "cooled_down_after_first_failure": false,
+      "outcomes": [
+        "RateLimitError",
+        "RateLimitError",
+        "RateLimitError",
+        "RateLimitError",
+        "RateLimitError",
+        "RateLimitError"
+      ]
+    },
+    {
+      "check": "429_multi",
+      "requests": 6,
+      "attempts_on_A": 1,
+      "cooled_down_after_first_failure": true,
+      "outcomes": [
+        "backup",
+        "backup",
+        "backup",
+        "backup",
+        "backup",
+        "backup"
+      ]
+    },
+    {
+      "check": "timeout_multi",
+      "requests": 6,
+      "attempts_on_A": 5,
+      "cooled_down_after_first_failure": false,
+      "outcomes": [
+        "backup",
+        "backup",
+        "backup",
+        "backup",
+        "backup",
+        "backup"
+      ]
+    },
+    {
+      "check": "401_single",
+      "requests": 6,
+      "attempts_on_A": 1,
+      "cooled_down_after_first_failure": true,
+      "outcomes": [
+        "BadRequestError",
+        "RouterRateLimitError",
+        "RouterRateLimitError",
+        "RouterRateLimitError",
+        "RouterRateLimitError",
+        "RouterRateLimitError"
+      ]
+    }
+  ]
+}

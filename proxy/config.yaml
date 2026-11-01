@@ -1,0 +1,19 @@
+# BerriAI/litellm#44815 through the real proxy, LiteLLM defaults.
+# The primary deployment carries a parameter its model rejects before anything is sent
+# (the config error from the issue); the backup is a plain healthy deployment.
+model_list:
+  - model_name: primary
+    litellm_params:
+      model: openai/gpt-5-unmapped
+      api_base: http://127.0.0.1:9101/v1
+      api_key: sk-fake
+      reasoning_effort: xhigh   # rejected before sending: UnsupportedParamsError
+  - model_name: backup
+    litellm_params:
+      model: openai/fake-model
+      api_base: http://127.0.0.1:9102/v1
+      api_key: sk-fake
+
+router_settings:
+  num_retries: 0
+  fallbacks: [{"primary": ["backup"]}]

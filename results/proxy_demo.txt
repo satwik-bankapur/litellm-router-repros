@@ -1,0 +1,16 @@
+### stable_default (LiteLLM 1.105.1, proxy/config.yaml)
+HTTP/1.1 200 OK
+x-litellm-model-api-base: http://127.0.0.1:9102/v1
+x-litellm-model-group: backup
+x-litellm-attempted-retries: 0
+x-litellm-attempted-fallbacks: 1
+body: {"id":"chatcmpl-1a887f77273d","created":1792221221,"model":"fake-model","object":"chat.completion","choices":[{"finish_reason":"stop","index":0,"message":{"content":"answered by backup","role":"assistant","provider_specific_fields":{"refusa
+calls to primary: 0
+calls to backup:  1
+
+### dev_fail_loudly (LiteLLM 1.107.0.dev3, proxy/config_fail_loudly.yaml)
+HTTP/1.1 400 Bad Request
+body: {"error":{"message":"litellm.UnsupportedParamsError: reasoning_effort=xhigh is not supported for this model.","type":"invalid_request_error","param":null,"code":"400"}}
+calls to primary: 0
+calls to backup:  0
+

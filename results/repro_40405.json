@@ -1,0 +1,683 @@
+{
+  "litellm_version": "1.105.1",
+  "results": [
+    {
+      "variant": "default",
+      "router_settings": "none",
+      "primary_model_info": "none",
+      "outage_requests": 5,
+      "outage_served": 5,
+      "outage_latency_median_s": 4.75,
+      "outage_latency_max_s": 7.48,
+      "primary_attempts_during_outage": 15,
+      "primary_attempts_per_outage_request": 3.0,
+      "primary_attempts_by_outage_request": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "served_by_after_outage": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "requests": [
+        {
+          "phase": "outage",
+          "sent_at_s": 0.0,
+          "latency_s": 7.48,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 10.5,
+          "latency_s": 4.52,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 18.0,
+          "latency_s": 4.75,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 25.8,
+          "latency_s": 4.4,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 33.2,
+          "latency_s": 4.95,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 41.1,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 44.1,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 47.2,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        }
+      ]
+    },
+    {
+      "variant": "tuned",
+      "router_settings": {
+        "allowed_fails": 1,
+        "cooldown_time": 30
+      },
+      "primary_model_info": "none",
+      "outage_requests": 13,
+      "outage_served": 13,
+      "outage_latency_median_s": 0.01,
+      "outage_latency_max_s": 0.8,
+      "primary_attempts_during_outage": 4,
+      "primary_attempts_per_outage_request": 0.31,
+      "primary_attempts_by_outage_request": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "served_by_after_outage": [
+        "backup",
+        "backup",
+        "backup"
+      ],
+      "requests": [
+        {
+          "phase": "outage",
+          "sent_at_s": 0.0,
+          "latency_s": 0.62,
+          "primary_attempts": 2,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 3.6,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 6.7,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 9.7,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 12.7,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 15.7,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 18.7,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 21.8,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 24.8,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 27.8,
+          "latency_s": 0.02,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 30.8,
+          "latency_s": 0.8,
+          "primary_attempts": 2,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 34.6,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 37.6,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 41.0,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 44.0,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 47.0,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        }
+      ]
+    },
+    {
+      "variant": "explicit_default",
+      "router_settings": {
+        "allowed_fails": 3
+      },
+      "primary_model_info": "none",
+      "outage_requests": 6,
+      "outage_served": 6,
+      "outage_latency_median_s": 4.51,
+      "outage_latency_max_s": 4.99,
+      "primary_attempts_during_outage": 18,
+      "primary_attempts_per_outage_request": 3.0,
+      "primary_attempts_by_outage_request": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "served_by_after_outage": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "requests": [
+        {
+          "phase": "outage",
+          "sent_at_s": 0.0,
+          "latency_s": 4.59,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 7.6,
+          "latency_s": 4.43,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 15.0,
+          "latency_s": 4.36,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 22.4,
+          "latency_s": 4.89,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 30.3,
+          "latency_s": 4.99,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 38.3,
+          "latency_s": 2.59,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 43.9,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 46.9,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 50.0,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        }
+      ]
+    },
+    {
+      "variant": "deployment_level",
+      "router_settings": "none",
+      "primary_model_info": {
+        "allowed_fails": 1,
+        "cooldown_time": 30
+      },
+      "outage_requests": 6,
+      "outage_served": 6,
+      "outage_latency_median_s": 4.62,
+      "outage_latency_max_s": 5.11,
+      "primary_attempts_during_outage": 18,
+      "primary_attempts_per_outage_request": 3.0,
+      "primary_attempts_by_outage_request": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "served_by_after_outage": [
+        "primary",
+        "primary",
+        "primary"
+      ],
+      "requests": [
+        {
+          "phase": "outage",
+          "sent_at_s": 0.0,
+          "latency_s": 4.54,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 7.5,
+          "latency_s": 4.69,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 15.2,
+          "latency_s": 4.96,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 23.2,
+          "latency_s": 4.54,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 30.8,
+          "latency_s": 5.11,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 38.9,
+          "latency_s": 2.33,
+          "primary_attempts": 3,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 44.2,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 47.2,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 50.3,
+          "latency_s": 0.01,
+          "primary_attempts": 1,
+          "ok": true,
+          "served_by": "primary",
+          "error": null
+        }
+      ]
+    },
+    {
+      "variant": "deployment_policy",
+      "router_settings": "none",
+      "primary_model_info": {
+        "allowed_fails_policy": {
+          "ServiceUnavailableErrorAllowedFails": 1
+        },
+        "cooldown_time": 30
+      },
+      "outage_requests": 13,
+      "outage_served": 13,
+      "outage_latency_median_s": 0.01,
+      "outage_latency_max_s": 1.26,
+      "primary_attempts_during_outage": 4,
+      "primary_attempts_per_outage_request": 0.31,
+      "primary_attempts_by_outage_request": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "served_by_after_outage": [
+        "backup",
+        "backup",
+        "backup"
+      ],
+      "requests": [
+        {
+          "phase": "outage",
+          "sent_at_s": 0.0,
+          "latency_s": 1.09,
+          "primary_attempts": 2,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 4.1,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 7.1,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 10.1,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 13.2,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 16.2,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 19.2,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 22.2,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 25.2,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 28.3,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 31.3,
+          "latency_s": 1.26,
+          "primary_attempts": 2,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 35.5,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 38.6,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 41.6,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 44.6,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "recovered",
+          "sent_at_s": 47.6,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        }
+      ]
+    }
+  ]
+}
