@@ -13,7 +13,7 @@ This sets up the venv, spins up `fake_provider.py`, runs the test scripts, and s
 ## What I found (on v1.105.1)
 
 **#40405 (single deployment cooldowns)**
-If a model group only has 1 deployment, the router doesn't cool it down on 503s or 429s by default. So during an outage, every request still wastes 3 attempts (~4.75s) on the dead primary before switching to the fallback.
+If a model group only has 1 deployment, the router doesn't cool it down on 503s or 429s by default. So during an outage, every request still wastes 3 attempts (~4.5s) on the dead primary before switching to the fallback.
 - Setting `allowed_fails=3` on the router does nothing because 3 is already the default in code, so the check ignores it.
 - Setting `allowed_fails=1` under `model_info` also gets skipped for single-deployment groups.
 - What works: setting `allowed_fails=1` and `cooldown_time=30` in `router_settings` (or using `allowed_fails_policy` on the deployment). That cools it down after the 2nd fail and drops primary attempts to 0.31/req (~0.01s).
