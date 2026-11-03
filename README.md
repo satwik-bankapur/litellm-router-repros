@@ -24,4 +24,3 @@ Tested against `1.107.0.dev3` (which has PR #46350) with `fallback_on_unsupporte
 
 **Ubuntu 24.04 timezone crash**
 While running the proxy demo on Ubuntu 24.04, `litellm --config` crashed on startup because my system had `TZ=Asia/Calcutta` and `pip install litellm[proxy]` doesn't install `tzdata`. Installing `tzdata` or switching `TZ=Asia/Kolkata` fixes it.
-'@ | Set-Content README.md -Encoding UTF8
