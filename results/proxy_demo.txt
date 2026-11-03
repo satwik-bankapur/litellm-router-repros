@@ -4,7 +4,7 @@ x-litellm-model-api-base: http://127.0.0.1:9102/v1
 x-litellm-model-group: backup
 x-litellm-attempted-retries: 0
 x-litellm-attempted-fallbacks: 1
-body: {"id":"chatcmpl-1a887f77273d","created":1792221221,"model":"fake-model","object":"chat.completion","choices":[{"finish_reason":"stop","index":0,"message":{"content":"answered by backup","role":"assistant","provider_specific_fields":{"refusa
+body: {"id":"chatcmpl-c4efa5b94f6b","created":1793687204,"model":"fake-model","object":"chat.completion","choices":[{"finish_reason":"stop","index":0,"message":{"content":"answered by backup","role":"assistant","provider_specific_fields":{"refusa
 calls to primary: 0
 calls to backup:  1
 

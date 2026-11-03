@@ -7,8 +7,8 @@
       "primary_model_info": "none",
       "outage_requests": 5,
       "outage_served": 5,
-      "outage_latency_median_s": 4.75,
-      "outage_latency_max_s": 7.48,
+      "outage_latency_median_s": 4.49,
+      "outage_latency_max_s": 6.77,
       "primary_attempts_during_outage": 15,
       "primary_attempts_per_outage_request": 3.0,
       "primary_attempts_by_outage_request": [
@@ -27,7 +27,7 @@
         {
           "phase": "outage",
           "sent_at_s": 0.0,
-          "latency_s": 7.48,
+          "latency_s": 6.77,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -35,8 +35,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 10.5,
-          "latency_s": 4.52,
+          "sent_at_s": 9.8,
+          "latency_s": 5.28,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -44,8 +44,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 18.0,
-          "latency_s": 4.75,
+          "sent_at_s": 18.1,
+          "latency_s": 4.43,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -53,8 +53,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 25.8,
-          "latency_s": 4.4,
+          "sent_at_s": 25.5,
+          "latency_s": 4.39,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -62,8 +62,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 33.2,
-          "latency_s": 4.95,
+          "sent_at_s": 32.9,
+          "latency_s": 4.49,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -71,7 +71,7 @@
         },
         {
           "phase": "recovered",
-          "sent_at_s": 41.1,
+          "sent_at_s": 41.0,
           "latency_s": 0.01,
           "primary_attempts": 1,
           "ok": true,
@@ -80,7 +80,7 @@
         },
         {
           "phase": "recovered",
-          "sent_at_s": 44.1,
+          "sent_at_s": 44.0,
           "latency_s": 0.01,
           "primary_attempts": 1,
           "ok": true,
@@ -89,7 +89,7 @@
         },
         {
           "phase": "recovered",
-          "sent_at_s": 47.2,
+          "sent_at_s": 47.0,
           "latency_s": 0.01,
           "primary_attempts": 1,
           "ok": true,
@@ -108,7 +108,7 @@
       "outage_requests": 13,
       "outage_served": 13,
       "outage_latency_median_s": 0.01,
-      "outage_latency_max_s": 0.8,
+      "outage_latency_max_s": 0.97,
       "primary_attempts_during_outage": 4,
       "primary_attempts_per_outage_request": 0.31,
       "primary_attempts_by_outage_request": [
@@ -135,7 +135,7 @@
         {
           "phase": "outage",
           "sent_at_s": 0.0,
-          "latency_s": 0.62,
+          "latency_s": 0.97,
           "primary_attempts": 2,
           "ok": true,
           "served_by": "backup",
@@ -143,7 +143,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 3.6,
+          "sent_at_s": 4.0,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -152,7 +152,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 6.7,
+          "sent_at_s": 7.0,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -161,7 +161,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 9.7,
+          "sent_at_s": 10.0,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -170,7 +170,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 12.7,
+          "sent_at_s": 13.0,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -179,7 +179,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 15.7,
+          "sent_at_s": 16.0,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -188,34 +188,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 18.7,
-          "latency_s": 0.01,
-          "primary_attempts": 0,
-          "ok": true,
-          "served_by": "backup",
-          "error": null
-        },
-        {
-          "phase": "outage",
-          "sent_at_s": 21.8,
-          "latency_s": 0.01,
-          "primary_attempts": 0,
-          "ok": true,
-          "served_by": "backup",
-          "error": null
-        },
-        {
-          "phase": "outage",
-          "sent_at_s": 24.8,
-          "latency_s": 0.01,
-          "primary_attempts": 0,
-          "ok": true,
-          "served_by": "backup",
-          "error": null
-        },
-        {
-          "phase": "outage",
-          "sent_at_s": 27.8,
+          "sent_at_s": 19.1,
           "latency_s": 0.02,
           "primary_attempts": 0,
           "ok": true,
@@ -224,16 +197,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 30.8,
-          "latency_s": 0.8,
-          "primary_attempts": 2,
-          "ok": true,
-          "served_by": "backup",
-          "error": null
-        },
-        {
-          "phase": "outage",
-          "sent_at_s": 34.6,
+          "sent_at_s": 22.1,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -242,7 +206,43 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 37.6,
+          "sent_at_s": 25.1,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 28.1,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 31.1,
+          "latency_s": 0.82,
+          "primary_attempts": 2,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 35.0,
+          "latency_s": 0.01,
+          "primary_attempts": 0,
+          "ok": true,
+          "served_by": "backup",
+          "error": null
+        },
+        {
+          "phase": "outage",
+          "sent_at_s": 38.0,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -269,7 +269,7 @@
         },
         {
           "phase": "recovered",
-          "sent_at_s": 47.0,
+          "sent_at_s": 47.1,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -286,8 +286,8 @@
       "primary_model_info": "none",
       "outage_requests": 6,
       "outage_served": 6,
-      "outage_latency_median_s": 4.51,
-      "outage_latency_max_s": 4.99,
+      "outage_latency_median_s": 4.69,
+      "outage_latency_max_s": 5.24,
       "primary_attempts_during_outage": 18,
       "primary_attempts_per_outage_request": 3.0,
       "primary_attempts_by_outage_request": [
@@ -316,7 +316,7 @@
         {
           "phase": "outage",
           "sent_at_s": 7.6,
-          "latency_s": 4.43,
+          "latency_s": 5.24,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -324,8 +324,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 15.0,
-          "latency_s": 4.36,
+          "sent_at_s": 15.8,
+          "latency_s": 3.97,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -333,8 +333,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 22.4,
-          "latency_s": 4.89,
+          "sent_at_s": 22.8,
+          "latency_s": 4.95,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -342,8 +342,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 30.3,
-          "latency_s": 4.99,
+          "sent_at_s": 30.8,
+          "latency_s": 4.78,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -351,8 +351,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 38.3,
-          "latency_s": 2.59,
+          "sent_at_s": 38.6,
+          "latency_s": 2.31,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "primary",
@@ -378,7 +378,7 @@
         },
         {
           "phase": "recovered",
-          "sent_at_s": 50.0,
+          "sent_at_s": 49.9,
           "latency_s": 0.01,
           "primary_attempts": 1,
           "ok": true,
@@ -396,8 +396,8 @@
       },
       "outage_requests": 6,
       "outage_served": 6,
-      "outage_latency_median_s": 4.62,
-      "outage_latency_max_s": 5.11,
+      "outage_latency_median_s": 4.6,
+      "outage_latency_max_s": 5.22,
       "primary_attempts_during_outage": 18,
       "primary_attempts_per_outage_request": 3.0,
       "primary_attempts_by_outage_request": [
@@ -417,7 +417,7 @@
         {
           "phase": "outage",
           "sent_at_s": 0.0,
-          "latency_s": 4.54,
+          "latency_s": 4.47,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -426,7 +426,7 @@
         {
           "phase": "outage",
           "sent_at_s": 7.5,
-          "latency_s": 4.69,
+          "latency_s": 5.22,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -434,8 +434,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 15.2,
-          "latency_s": 4.96,
+          "sent_at_s": 15.7,
+          "latency_s": 5.04,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -443,8 +443,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 23.2,
-          "latency_s": 4.54,
+          "sent_at_s": 23.8,
+          "latency_s": 4.73,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -452,8 +452,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 30.8,
-          "latency_s": 5.11,
+          "sent_at_s": 31.5,
+          "latency_s": 4.22,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "backup",
@@ -461,8 +461,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 38.9,
-          "latency_s": 2.33,
+          "sent_at_s": 38.7,
+          "latency_s": 2.48,
           "primary_attempts": 3,
           "ok": true,
           "served_by": "primary",
@@ -508,8 +508,8 @@
       },
       "outage_requests": 13,
       "outage_served": 13,
-      "outage_latency_median_s": 0.01,
-      "outage_latency_max_s": 1.26,
+      "outage_latency_median_s": 0.02,
+      "outage_latency_max_s": 0.94,
       "primary_attempts_during_outage": 4,
       "primary_attempts_per_outage_request": 0.31,
       "primary_attempts_by_outage_request": [
@@ -536,7 +536,7 @@
         {
           "phase": "outage",
           "sent_at_s": 0.0,
-          "latency_s": 1.09,
+          "latency_s": 0.94,
           "primary_attempts": 2,
           "ok": true,
           "served_by": "backup",
@@ -544,7 +544,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 4.1,
+          "sent_at_s": 4.0,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -553,8 +553,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 7.1,
-          "latency_s": 0.01,
+          "sent_at_s": 7.0,
+          "latency_s": 0.02,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
@@ -562,8 +562,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 10.1,
-          "latency_s": 0.01,
+          "sent_at_s": 10.0,
+          "latency_s": 0.02,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
@@ -571,8 +571,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 13.2,
-          "latency_s": 0.01,
+          "sent_at_s": 13.1,
+          "latency_s": 0.04,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
@@ -580,8 +580,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 16.2,
-          "latency_s": 0.01,
+          "sent_at_s": 16.1,
+          "latency_s": 0.02,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
@@ -589,8 +589,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 19.2,
-          "latency_s": 0.01,
+          "sent_at_s": 19.1,
+          "latency_s": 0.02,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
@@ -599,7 +599,7 @@
         {
           "phase": "outage",
           "sent_at_s": 22.2,
-          "latency_s": 0.01,
+          "latency_s": 0.02,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
@@ -616,8 +616,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 28.3,
-          "latency_s": 0.01,
+          "sent_at_s": 28.2,
+          "latency_s": 0.02,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
@@ -626,7 +626,7 @@
         {
           "phase": "outage",
           "sent_at_s": 31.3,
-          "latency_s": 1.26,
+          "latency_s": 0.94,
           "primary_attempts": 2,
           "ok": true,
           "served_by": "backup",
@@ -634,8 +634,8 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 35.5,
-          "latency_s": 0.01,
+          "sent_at_s": 35.2,
+          "latency_s": 0.02,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
@@ -643,7 +643,7 @@
         },
         {
           "phase": "outage",
-          "sent_at_s": 38.6,
+          "sent_at_s": 38.3,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -652,7 +652,7 @@
         },
         {
           "phase": "recovered",
-          "sent_at_s": 41.6,
+          "sent_at_s": 41.3,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -661,7 +661,7 @@
         },
         {
           "phase": "recovered",
-          "sent_at_s": 44.6,
+          "sent_at_s": 44.3,
           "latency_s": 0.01,
           "primary_attempts": 0,
           "ok": true,
@@ -670,8 +670,8 @@
         },
         {
           "phase": "recovered",
-          "sent_at_s": 47.6,
-          "latency_s": 0.01,
+          "sent_at_s": 47.3,
+          "latency_s": 0.11,
           "primary_attempts": 0,
           "ok": true,
           "served_by": "backup",
